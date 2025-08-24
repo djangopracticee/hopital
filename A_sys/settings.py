@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # local apps
     'doctors.apps.DoctorsConfig',
     'patients.apps.PatientsConfig',
+    'pharmacy',
 
 
 ]
