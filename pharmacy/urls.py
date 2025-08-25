@@ -7,4 +7,3 @@ urlpatterns =[
     path('pharmacy', views.pharma)
     
 ]
-
