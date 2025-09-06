@@ -9,3 +9,7 @@ def records_dashboard(request):
 
 def add_patient(request):
     return render(request, 'records/add_patient.html')
+
+
+def all_patients(request):
+    return render(request, 'records/all_patients.html')

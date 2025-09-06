@@ -7,7 +7,12 @@ app_name = 'records'
 
 urlpatterns = [
     path('', views.records_dashboard, name='dashboard'),
+
     path('add-patient/', views.add_patient, name='add_patient'),
+     
+    path('all-patients/', views.all_patients, name='all_patients'),
+
+    
 ]
 
  
