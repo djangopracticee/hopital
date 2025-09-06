@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 
-app-name = 'doctor'
+app_name = 'doctor'
 
 # base url : http://127.0.0.1:8000/
 
