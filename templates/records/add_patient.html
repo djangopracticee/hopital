@@ -13,8 +13,8 @@
         <meta name="website" content="https://shreethemes.in/" />
         <meta name="Version" content="v1.4.0" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="/assets/images/favicon.ico">
-
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        
         <!-- Css -->
         <link href="{% static 'assets/libs/simplebar/simplebar.min.css' %}" rel="stylesheet">
         <link href="{% static 'assets/libs/js-datepicker/datepicker.min.css' %}" rel="stylesheet">
@@ -54,11 +54,22 @@
                             </span>
                         </a>
                     </div>
-
+        
                     <ul class="sidebar-menu">
                         <li><a href="index.html"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
 
-                        
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)"><i class="uil uil-browser me-2"></i>Layouts <span class="badge bg-danger rounded-pill ms-2">New</span></a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="index-dark.html">Dark Dashboard</a></li>
+                                    <li><a href="index-rtl.html">RTL Dashboard</a></li>
+                                    <li><a href="index-rtl-dark.html">Dark RTL Dashboard</a></li>
+                                    <li><a href="index-sidebar-dark.html">Dark Sidebar</a></li>
+                                    <li><a href="index-sidebar-colored.html">Colored Sidebar</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="appointment.html"><i class="uil uil-stethoscope me-2 d-inline-block"></i>Appointment</a></li>
 
                         <li class="sidebar-dropdown">
@@ -130,7 +141,7 @@
                                 </ul>
                             </div>
                         </li>
-
+            
                         <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-envelope-open me-2 d-inline-block"></i>Email Template </a>
                             <div class="sidebar-submenu">
@@ -213,10 +224,10 @@
                     <div class="header-bar d-flex justify-content-between border-bottom">
                         <div class="d-flex align-items-center">
                             <a href="#" class="logo-icon">
-                                <img src="{% static 'assets/images/logo-icon.png' %}" height="30" class="small" alt="">
+                                <img src="{% static '../assets/images/logo-icon.png' %}" height="30" class="small" alt="">
                                 <span class="big">
-                                    <img src="{% static 'assets/images/logo-dark.png' %}" height="22" class="logo-light-mode" alt="">
-                                    <img src="{% static 'assets/images/logo-light.png' %}" height="22" class="logo-dark-mode" alt="">
+                                    <img src="{% static '../assets/images/logo-dark.png' %}" height="22" class="logo-light-mode" alt="">
+                                    <img src="{% static '../assets/images/logo-light.png' %}" height="22" class="logo-dark-mode" alt="">
                                 </span>
                             </a>
                             <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-2" href="#">
@@ -237,38 +248,38 @@
                         <ul class="list-unstyled mb-0">
                             <li class="list-inline-item mb-0">
                                 <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{% static 'assets/images/language/american.png' %}" class="avatar avatar-ex-small rounded-circle p-2" alt=""></button>
+                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{% static '../assets/images/language/american.png' %}" class="avatar avatar-ex-small rounded-circle p-2" alt=""></button>
                                     <div class="dropdown-menu dd-menu drop-ups dropdown-menu-end shadow border-0 mt-3 p-2" data-simplebar style="height: 175px;">
                                         <a href="javascript:void(0)" class="d-flex align-items-center">
-                                            <img src="{% static 'assets/images/language/chinese.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{% static '../assets/images/language/chinese.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Chinese</small>
                                             </div>
                                         </a>
 
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="{% static 'assets/images/language/european.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{% static '../assets/images/language/european.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">European</small>
                                             </div>
                                         </a>
 
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="{% static 'assets/images/language/indian.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{% static '../assets/images/language/indian.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Indian</small>
                                             </div>
                                         </a>
 
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="{% static 'assets/images/language/japanese.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{% static '../assets/images/language/japanese.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Japanese</small>
                                             </div>
                                         </a>
 
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="{% static 'assets/images/language/russian.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="{% static '../assets/images/language/russian.png' %}" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Russian</small>
                                             </div>
@@ -287,46 +298,46 @@
                                 <div class="dropdown dropdown-primary">
                                     <button type="button" class="btn btn-icon btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="mail" class="fea icon-sm"></i></button>
                                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">4 <span class="visually-hidden">unread mail</span></span>
-
+                    
                                     <div class="dropdown-menu dd-menu dropdown-menu-end shadow rounded border-0 mt-3 px-2 py-2" data-simplebar style="height: 320px; width: 300px;">
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="{% static 'assets/images/client/02.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{% static '../assets/images/client/02.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Janalia</b> <small class="text-muted fw-normal d-inline-block">1 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="{% static 'assets/images/client/Codepen.svg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{% static '../assets/images/client/Codepen.svg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>codepen</b>  <small class="text-muted fw-normal d-inline-block">4 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="{% static 'assets/images/client/03.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{% static '../assets/images/client/03.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Cristina</b> <small class="text-muted fw-normal d-inline-block">5 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="{% static 'assets/images/client/dribbble.svg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{% static '../assets/images/client/dribbble.svg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Dribbble</b> <small class="text-muted fw-normal d-inline-block">24 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="{% static 'assets/images/client/06.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{% static '../assets/images/client/06.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Donald Aghori</b> <small class="text-muted fw-normal d-inline-block">1 day ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="{% static 'assets/images/client/07.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="{% static '../assets/images/client/07.jpg' %}" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Calvin</b> <small class="text-muted fw-normal d-inline-block">2 day ago</small></small>
                                             </div>
                                         </a>
@@ -339,7 +350,7 @@
                                     <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{% static '../assets/images/doctors/01.jpg' %}" class="avatar avatar-ex-small rounded-circle" alt=""></button>
                                     <div class="dropdown-menu dd-menu dropdown-menu-end shadow border-0 mt-3 py-3" style="min-width: 200px;">
                                         <a class="dropdown-item d-flex align-items-center text-dark" href="profile.html">
-                                            <img src="{% static 'assets/images/doctors/01.jpg' %}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                            <img src="{% static '../assets/images/doctors/01.jpg' %}" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                             <div class="flex-1 ms-2">
                                                 <span class="d-block mb-1">Calvin Carlo</span>
                                                 <small class="text-muted">Orthopedic</small>
@@ -358,203 +369,159 @@
 
                 <div class="container-fluid">
                     <div class="layout-specing">
+                        <div class="d-md-flex justify-content-between">
+                            <h5 class="mb-0">Add New Patient</h5>
+
+                            <nav aria-label="breadcrumb" class="d-inline-block mt-4 mt-sm-0">
+                                <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
+                                    <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
+                                    <li class="breadcrumb-item"><a href="patients.html">Patients</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Add Patient</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
                         <div class="row">
-                            <div class="col-xl-9 col-md-6">
-                                <h5 class="mb-0">Doctors</h5>
+                            <div class="col-lg-8 mt-4">
+                                <div class="card border-0 p-4 rounded shadow">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2 col-md-4">
+                                            <img src="{% static '../assets/images/client/01.jpg' %}" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
+                                        </div><!--end col-->
+            
+                                        <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
+                                            <h5 class="">Upload your picture</h5>
+                                            <p class="text-muted mb-0">For best results, use an image at least 600px by 600px in either .jpg or .png format</p>
+                                        </div><!--end col-->
+            
+                                        <div class="col-lg-5 col-md-12 text-lg-end text-center mt-4 mt-lg-0">
+                                            <a href="#" class="btn btn-primary">Upload</a>
+                                            <a href="#" class="btn btn-soft-primary ms-2">Remove</a>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+            
+                                    <form class="mt-4">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">First Name</label>
+                                                    <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
+                                                </div>
+                                            </div><!--end col-->
+            
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Last Name</label>
+                                                    <input name="name" id="name2" type="text" class="form-control" placeholder="Last Name :">
+                                                </div>
+                                            </div><!--end col-->
+            
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Your Email</label>
+                                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
+                                                </div> 
+                                            </div><!--end col-->
+            
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Phone no.</label>
+                                                    <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
+                                                </div>                                                                               
+                                            </div><!--end col-->
 
-                                <nav aria-label="breadcrumb" class="d-inline-block mt-2">
-                                    <ul class="breadcrumb breadcrumb-muted bg-transparent rounded mb-0 p-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Doctors</li>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label"> Date : </label>
+                                                    <input name="date" type="text" class="form-control start" placeholder="Select date :">
+                                                </div>
+                                            </div><!--end col-->
+            
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Departments</label>
+                                                    <select class="form-select form-control">
+                                                        <option value="EY">Eye Care</option>
+                                                        <option value="GY">Gynecologist</option>
+                                                        <option value="PS">Psychotherapist</option>
+                                                        <option value="OR">Orthopedic</option>
+                                                        <option value="DE">Dentist</option>
+                                                        <option value="GA">Gastrologist</option>
+                                                        <option value="UR">Urologist</option>
+                                                        <option value="NE">Neurologist</option>
+                                                    </select>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+            
+                                        <button type="submit" class="btn btn-primary">Add Patient</button>
+                                    </form>
+                                </div>
+                            </div><!--end col-->
+
+                            <div class="col-lg-4 mt-4">
+                                <div class="card rounded border-0 shadow">
+                                    <div class="p-4 border-bottom">
+                                        <h5 class="mb-0">Doctors List</h5>
+                                    </div>
+
+                                    <ul class="list-unstyled mb-0 p-4" data-simplebar style="height: 629px;">
+                                        <li class="d-md-flex align-items-center text-center text-md-start">
+                                            <img src="{% static '../assets/images/doctors/01.jpg' %}" class="avatar avatar-medium rounded-md shadow" alt="">
+
+                                            <div class="ms-md-3 mt-4 mt-sm-0">
+                                                <a href="#" class="text-dark h6">Dr. Calvin Carlo</a>
+                                                <p class="text-muted my-1">Cardiologist</p>
+                                                <p class="text-muted mb-0">3 Years Experienced</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                            <img src="{% static '../assets/images/doctors/02.jpg' %}" class="avatar avatar-medium rounded-md shadow" alt="">
+
+                                            <div class="ms-md-3 mt-4 mt-sm-0">
+                                                <a href="#" class="text-dark h6">Dr. Alex Smith</a>
+                                                <p class="text-muted my-1">Dentist</p>
+                                                <p class="text-muted mb-0">1 Years Experienced</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                            <img src="{% static '../assets/images/doctors/03.jpg' %}" class="avatar avatar-medium rounded-md shadow" alt="">
+
+                                            <div class="ms-md-3 mt-4 mt-sm-0">
+                                                <a href="#" class="text-dark h6">Dr. Cristina Luly</a>
+                                                <p class="text-muted my-1">Orthopedic</p>
+                                                <p class="text-muted mb-0">5 Years Experienced</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                            <img src="{% static '../assets/images/doctors/04.jpg' %}" class="avatar avatar-medium rounded-md shadow" alt="">
+
+                                            <div class="ms-md-3 mt-4 mt-sm-0">
+                                                <a href="#" class="text-dark h6">Dr. Dwayen Maria</a>
+                                                <p class="text-muted my-1">Gastrologist</p>
+                                                <p class="text-muted mb-0">2 Years Experienced</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                            <img src="{% static '../assets/images/doctors/05.jpg' %}" class="avatar avatar-medium rounded-md shadow" alt="">
+
+                                            <div class="ms-md-3 mt-4 mt-sm-0">
+                                                <a href="#" class="text-dark h6">Dr. Jenelia Focia</a>
+                                                <p class="text-muted my-1">Psychotherapist</p>
+                                                <p class="text-muted mb-0">3 Years Experienced</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="mt-4">
+                                            <a href="doctors.html" class="btn btn-primary">All Doctors</a>
+                                        </li>
                                     </ul>
-                                </nav>
-                            </div><!--end col-->
-
-                            <div class="col-xl-3 col-md-6 mt-4 mt-md-0 text-md-end">
-                                <a href="add-doctor.html" class="btn btn-primary">Add New Doctor</a>
-                            </div><!--end col-->
-                        </div><!--end row-->
-
-                        <div class="row row-cols-md-2 row-cols-lg-5">
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static 'assets/images/doctors/01.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
-                                        <small class="text-muted speciality">Eye Care</small>
-                                    </div>
                                 </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static 'assets/images/doctors/02.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Cristino Murphy</a>
-                                        <small class="text-muted speciality">Gynecology</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/03.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Alia Reddy</a>
-                                        <small class="text-muted speciality">Psychotherapy</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/04.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Toni Kovar</a>
-                                        <small class="text-muted speciality">Orthopedic</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/05.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Jessica McFarlane</a>
-                                        <small class="text-muted speciality">Dentist</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/06.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Elsie Sherman</a>
-                                        <small class="text-muted speciality">Gastrologist</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/07.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Bertha Magers</a>
-                                        <small class="text-muted speciality">Urologist</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/08.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Louis Batey</a>
-                                        <small class="text-muted speciality">Neurologist</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/09.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Julie Rosario</a>
-                                        <small class="text-muted speciality">Psychotherapy</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col mt-4">
-                                <div class="card team border-0 rounded shadow overflow-hidden">
-                                    <div class="team-img position-relative">
-                                        <img src="{% static '../assets/images/doctors/10.jpg' %}" class="img-fluid" alt="">
-                                        <ul class="list-unstyled team-social mb-0">
-                                            <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="instagram" class="icons"></i></a></li>
-                                            <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-body content text-center">
-                                        <a href="dr-profile.html" class="title text-dark h5 d-block mb-0">Scott Guzman</a>
-                                        <small class="text-muted speciality">Nutritionists</small>
-                                    </div>
-                                </div>
-                            </div><!--end col-->
+                            </div>
                         </div><!--end row-->
                     </div>
                 </div><!--end container-->
@@ -581,8 +548,8 @@
         <div class="offcanvas offcanvas-end shadow border-0" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header p-4 border-bottom">
                 <h5 id="offcanvasRightLabel" class="mb-0">
-                    <img src="{% static 'assets/images/logo-dark.png' %}" height="22" class="light-version" alt="">
-                    <img src="{% static 'assets/images/logo-light.png' %}" height="22" class="dark-version" alt="">
+                    <img src="{% static '../assets/images/logo-dark.png' %}" height="22" class="light-version" alt="">
+                    <img src="{% static '../assets/images/logo-light.png' %}" height="22" class="dark-version" alt="">
                 </h5>
                 <button type="button" class="btn-close d-flex align-items-center text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="uil uil-times fs-4"></i></button>
             </div>
@@ -596,9 +563,9 @@
                                     <li class="d-grid"><a href="javascript:void(0)" class="rtl-version t-rtl-light" onclick="setTheme('style-rtl')"><img src="{% static '../assets/images/layouts/light-dash-rtl.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">RTL Version</span></a></li>
                                     <li class="d-grid"><a href="javascript:void(0)" class="ltr-version t-ltr-light" onclick="setTheme('style')"><img src="{% static '../assets/images/layouts/light-dash.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">LTR Version</span></a></li>
                                     <li class="d-grid"><a href="javascript:void(0)" class="dark-rtl-version t-rtl-dark" onclick="setTheme('style-dark-rtl')"><img src="{% static '../assets/images/layouts/dark-dash-rtl.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">RTL Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-ltr-version t-ltr-dark" onclick="setTheme('style-dark')"><img src="{% static '/assets/images/layouts/dark-dash.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">LTR Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-ltr-version t-ltr-dark" onclick="setTheme('style-dark')"><img src="{% static '../assets/images/layouts/dark-dash.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">LTR Version</span></a></li>
                                     <li class="d-grid"><a href="javascript:void(0)" class="dark-version t-dark mt-4" onclick="setTheme('style-dark')"><img src="{% static '../assets/images/layouts/dark-dash.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">Dark Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="light-version t-light mt-4" onclick="setTheme('style')"><img src="{% static '/assets/images/layouts/light-dash.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">Light Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="light-version t-light mt-4" onclick="setTheme('style')"><img src="{% static '../assets/images/layouts/light-dash.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">Light Version</span></a></li>
                                     <li class="d-grid"><a href="https://shreethemes.in/doctris/layouts/landing/index.html" target="_blank" class="mt-4"><img src="{% static '../assets/images/layouts/landing-light.png' %}" class="img-fluid rounded-md shadow-md d-block mx-auto" style="width: 240px;" alt=""><span class="text-dark fw-medium mt-3 d-block">Landing Page</span></a></li>
                                 </ul>
                             </div>
@@ -622,16 +589,20 @@
             </div>
         </div>
         <!-- Offcanvas End -->
-
+        
+        <!-- Modal end -->
+        
         <!-- javascript -->
-        <script src="{% static 'assets/libs/simplebar/simplebar.min.js' %}"></script>
-        <script src="{% static 'assets/libs/feather-icons/feather.min.js' %}"></script>
+        <script src="{% static '../assets/libs/simplebar/simplebar.min.js' %}"></script>
+        <script src="{% static '../assets/libs/js-datepicker/datepicker.min.js' %}"></script>
+        <!-- Icons -->
+        <script src="{% static '../assets/libs/feather-icons/feather.min.js' %}"></script>
         <!-- Main Js -->
         <!-- JAVASCRIPT -->
-        <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-        <script src="{% static 'assets/js/plugins.init.js' %}"></script>
-        <script src="{% static 'assets/js/app.js' %}"></script>
-
+        <script src="{% static '../assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static '../assets/js/plugins.init.js' %}"></script>
+        <script src="{% static '../assets/js/app.js' %}"></script>
+        
     </body>
 
 </html>

@@ -21,9 +21,11 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('doctors.urls')),
-    path('', include('patients.urls')),
-    path('', include('pharmacy.urls')),
+    path('doctors/', include('doctors.urls')),
+    path('patients/', include('patients.urls')),
+    path('pharmacy/', include('pharmacy.urls')),
+    path('', include('records.urls', namespace="records")),
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

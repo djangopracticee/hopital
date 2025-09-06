@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'doctors.apps.DoctorsConfig',
     'patients.apps.PatientsConfig',
     'pharmacy',
+    'records',
 
 
 ]
