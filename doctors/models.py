@@ -1,13 +1,13 @@
 from django.db import models
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 
 
-# Create your models here.
 
-class Doctor(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
-    email = models.EmailField()
+
+class Doctors(models.Model):
+    doctor_user = models.ForeignKey(User, on_delete=models.CASCADE )
 
     def __str__(self):
-        return self.first_name + " " + self.last_name
+        return (self.doctor_user.first_name)
